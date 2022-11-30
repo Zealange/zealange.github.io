@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16px;
+}
+
+header {
+	height: 100vh;
+	width: 100vw;
+	background: #050505;
+    transition: none;
+}
+
+.container
+{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.container img {
+    height: 7em;
+    width: auto;
+    z-index: 100;
+    margin: 50px;
+    border-radius: 12px;
+}
+
+.container h2 {
+    font-size: 3.5em;
+	font-weight: 500;
+    text-align: center;
+    margin: 0;
+  	background: linear-gradient(to top right, #ff901e, #f6bf28);
+  	-webkit-background-clip: text;
+  	background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+.container h1 {
+	letter-spacing: .6rem;
+	text-align: center;
+	font-size: 3.2rem;
+	font-weight: 200;
+	text-transform: uppercase;
+	color: #ffba00;
+	line-height: 3.5rem;
+}
+
+.container h3 {
+	max-width: 450px;
+	text-align: center;
+	color: #fff;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+	margin: 20px auto 40px auto;
+}
+
+.countdown {
+	display:  flex;
+	width: 100%;
+	height: 100px;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+
+.countdown .timer {
+	height: 100%;
+	width: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+}
+
+.countdown .timer .numb {
+	font-size: 30px;
+	font-weight: 500;
+}
+
+.countdown .timer .text {
+	font-size: 20px;
+	font-weight: 200;
+}
+
+.countdown .clone {
+	font-size: 45px;
+}
+
+@media (max-width: 630px) {
+
+    .container img {
+        height: 6em;
+        margin: 40px;
+    }
+
+	.container h1 {
+		font-size: 3rem;
+		line-height: 3.2rem;
+	}
+	
+	.container h3 {
+		font-size: 1.5rem;
+		line-height: 1.5rem;
+	}
+
+	.countdown{
+	  height: 80px;
+	}
+	.countdown .timer{
+	  width: 80px;
+	}
+	.countdown .timer .numb{
+	  font-size: 32px;
+	}
+	.countdown .timer .text{
+	  font-size: 15px;
+	}
+	.countdown .clone{
+	  font-size: 40px;
+	}
+  }
+  @media (max-width: 542px){
+	.countdown .timer{
+	  border: none;
+	}
+	.countdown .timer .numb{
+	  font-size: 28px;
+	}
+	.countdown .timer .text{
+	  font-size: 15px;
+	}
+	.countdown .clone{
+	  display: none;
+	}
+  }
+  @media (max-width: 340px){
+	.container h1 {
+		font-size: 2rem;
+		line-height: 3.2rem;
+	}
+	
+	.container h3 {
+		font-size: 1.7rem;
+		line-height: 1.7rem;
+	}
+
+	.countdown{
+	  height: 30px;
+	}
+	.countdown .timer{
+	  width: 30px;
+	}
+  }
